@@ -9,7 +9,7 @@ export const metadata = {
   title: "DarazPro",
   description: "By Mohammad Rakib",
 };
-
+// Nothing for commit
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
