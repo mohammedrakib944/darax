@@ -1,19 +1,26 @@
-"use client";
-import Image from "next/image";
+import React from "react";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import smartPhone from "../assets/products/camera.jpg";
 
 import FixedRating from "./FixedRating";
 
-const Card = ({ product }) => {
+type TCardProps = {
+  img: StaticImageData;
+  name: string;
+  price: number;
+  prev: number;
+  rating: number;
+  count: number;
+};
+
+const Card: React.FC<TCardProps> = (props) => {
+  const { img, name, price, prev, rating, count } = props;
   return (
     <div className="min-w-[150px] max-w-[390px] border overflow-hidden hover:shadow-lg rounded-lg">
       <Link href="#">
         <Image
           className="w-full h-[130px] object-cover cursor-pointer duration-200"
-          src={product.img}
-          width="100%"
-          height="100%"
+          src={img}
           alt="Camera"
         />
       </Link>
@@ -21,13 +28,13 @@ const Card = ({ product }) => {
         <div className="text-sm ">
           <div className="min-h-[40px]">
             <Link href="#" className="text-xs font-semibold cursor-pointer">
-              {product.name?.slice(0, 40)}
-              {product.name?.length > 40 && "..."}
+              {name?.slice(0, 40)}
+              {name?.length > 40 && "..."}
             </Link>
           </div>
-          <p className="font-bold mt-1 text-primary">${product.price}</p>
-          <p className="line-through text-xs text-gray-600">${product.prev}</p>
-          <FixedRating rate={product.rating} count={product.count} />
+          <p className="font-bold mt-1 text-primary">${price}</p>
+          <p className="line-through text-xs text-gray-600">${prev}</p>
+          <FixedRating rate={rating} count={count} />
         </div>
       </div>
     </div>

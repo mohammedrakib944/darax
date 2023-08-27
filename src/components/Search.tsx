@@ -1,6 +1,7 @@
+import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 
-const Search = () => {
+const Search: React.FC = () => {
   return (
     <div className="max-w-[360px] mx-auto hidden md:block">
       <form>

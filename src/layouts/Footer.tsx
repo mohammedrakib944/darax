@@ -1,4 +1,4 @@
-"use client";
+import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { TfiWorld } from "react-icons/tfi";
 import {
@@ -9,7 +9,7 @@ import {
 } from "react-icons/ai";
 import Link from "next/link";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <div className="bg-white pt-10 mt-12">
       <div className="lg:max-w-[1188px] mx-auto px-4">
@@ -106,8 +106,17 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[990px] mx-auto pt-4 pl-4 mt-6 border-t">
-        <span className="text-xs text-gray-600">© 2023, myselfrakib.com</span>
+      <div className="max-w-[990px] mx-auto py-3 text-center mt-6 border-t">
+        <div className="text-xs text-gray-600">
+          © 2023,{" "}
+          <a
+            href="https://www.myselfrakib.com"
+            className="hover:underline"
+            target="_blank"
+          >
+            myselfrakib.com
+          </a>
+        </div>
       </div>
     </div>
   );

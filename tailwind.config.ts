@@ -1,11 +1,16 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/app/**/*.{js,ts,jsx}", "./src/**/*.{js,ts,jsx}"],
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/app/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
       {
-        darazPro: {
+        darax: {
           primary: "#ff6801",
           secondary: "#faca51",
           accent: "#424242",
@@ -20,3 +25,4 @@ module.exports = {
     ],
   },
 };
+export default config;

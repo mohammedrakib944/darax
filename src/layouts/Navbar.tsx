@@ -1,14 +1,14 @@
+import React from "react";
 import Image from "next/image";
 import Logo from "../assets/logo.svg";
 import Avatar from "../assets/avatar.jpg";
-import React from "react";
 import { AiOutlineShoppingCart, AiOutlineLogout } from "react-icons/ai";
 import { BsTruck } from "react-icons/bs";
 import { RxAvatar } from "react-icons/rx";
 import Link from "next/link";
 import Search from "@/components/Search";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const cartItems = 2;
   return (
     <div className="w-full bg-white shadow-sm py-2 sticky top-0 z-50">
