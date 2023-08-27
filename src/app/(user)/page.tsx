@@ -9,7 +9,9 @@ export default function Home() {
         <Menu />
       </div>
       <div>
-        {/* <Banner /> */}
+        <Banner />
+        <FlashSell />
+        <FlashSell />
         <FlashSell />
       </div>
     </main>
