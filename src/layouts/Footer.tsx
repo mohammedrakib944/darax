@@ -12,7 +12,7 @@ import Link from "next/link";
 const Footer: React.FC = () => {
   return (
     <div className="bg-white pt-10 mt-12">
-      <div className="lg:max-w-[1188px] mx-auto px-4">
+      <div className="lg:max-w-[1300px] mx-auto px-4">
         <div className="flex justify-between flex-wrap">
           <div>
             <h3>Quick links</h3>

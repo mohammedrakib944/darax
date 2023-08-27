@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
   const cartItems = 2;
   return (
     <div className="w-full bg-white shadow-sm py-2 sticky top-0 z-50">
-      <div className="lg:max-w-[1188px] px-3 mx-auto flex justify-between items-center">
+      <div className="lg:max-w-[1300px] px-3 mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-1 text-primary">
           <Image src={Logo} width="38" height="30" alt="DarazPro Rakib" />
