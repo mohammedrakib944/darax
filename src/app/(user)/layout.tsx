@@ -1,4 +1,5 @@
 import Navbar from "@/layouts/Navbar";
+import React from "react";
 import "../globals.css";
 import "@smastrom/react-rating/style.css";
 import type { Metadata } from "next";
@@ -12,11 +13,11 @@ export const metadata: Metadata = {
   description: "By Mohammad Rakib",
 };
 
-export default function RootLayout({
-  children,
-}: {
+interface Ichildren {
   children: React.ReactNode;
-}) {
+}
+
+const RootLayout: React.FC<Ichildren> = ({ children }) => {
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -26,4 +27,5 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+export default RootLayout;

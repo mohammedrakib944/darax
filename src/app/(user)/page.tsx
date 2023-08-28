@@ -1,6 +1,7 @@
 import FlashSell from "./_components/FlashSell";
 import Banner from "./_components/Banner";
 import Menu from "@/components/Menu";
+import Category from "./_components/Category";
 
 export default function Home() {
   return (
@@ -10,9 +11,17 @@ export default function Home() {
       </div>
       <div>
         <Banner />
-        <FlashSell />
-        <FlashSell />
-        <FlashSell />
+        <div className="mt-6">
+          <h2 className="text-accent">FlashSale</h2>
+          <FlashSell />
+        </div>
+        <Category />
+        <div className="mt-6">
+          <h2 className="text-accent">For you</h2>
+          <FlashSell />
+          <FlashSell />
+          <FlashSell />
+        </div>
       </div>
     </main>
   );

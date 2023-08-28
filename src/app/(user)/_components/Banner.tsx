@@ -9,7 +9,7 @@ import ImageSlider from "@/layouts/slider/ImageSlider";
 
 const sliderImages = [Cover1, Cover2, Cover3];
 
-const Banner = () => {
+const Banner: React.FC = () => {
   return (
     <div className="w-full">
       <ImageSlider sliderImages={sliderImages} delay={2500} />
