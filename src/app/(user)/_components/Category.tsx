@@ -4,7 +4,7 @@ const Category: React.FC = () => {
   return (
     <div className="mt-6">
       <h2>Categories</h2>
-      <div className="mt-3 grid grid-cols-4 lg:grid-cols-8 gap-1">
+      <div className="mt-3 grid grid-cols-3 lg:grid-cols-8 gap-1">
         <div className="bg-white px-4 py-6 text-center rounded-lg hover:shadow-lg duration-200 cursor-pointer">
           <span className="font-semibold text-sm">Accessories</span>
         </div>
